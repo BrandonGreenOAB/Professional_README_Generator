@@ -15,12 +15,16 @@ function generateMarkdown(data) {
   6. [Questions](#Questions)
 
   ## Installation
+  ${data.instillation}
 
   ## Usage
+  ${data.usages}
 
   ## License
+  ${data.license}
 
   ## Contributing
+  Https://www.github.com/${data.github}/
 
   ### Contributor Covenant Code of Conduct
 
@@ -154,6 +158,8 @@ function generateMarkdown(data) {
   ## Tests
 
   ## Questions
+
+
 
 
 `;

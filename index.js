@@ -19,6 +19,16 @@ inquirer
 // * The generated README includes 1 badge that's specific to the repository.
     {
         type:"input",
+        message:"What is your name?",
+        name:"name"
+    },
+    {
+        type:"input",
+        message:"What is your github username?",
+        name:"github"
+    },
+    {
+        type:"input",
         message:"Enter project title",
         name:"title"
     },
@@ -26,6 +36,11 @@ inquirer
         type:"input",
         message:"Enter a description of the project",
         name:"description"
+    },
+    {
+        type:"input",
+        message:"Provide a step by step description of how to get the project running",
+        name:"instillation"
     },
     {
         type:"input",
@@ -38,10 +53,6 @@ inquirer
         name:"license",
         choices:["MIT", "GPL", "Apache 3.0", "Apache 2.0", "BSD"]
     },
-    {
-        
-    }
-
   ])
   .then(answers => {
 
