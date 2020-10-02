@@ -56,7 +56,7 @@ inquirer
   ])
   .then(answers => {
 
-    const generatedFile = generateMarkdown(answers)
+    const generatedFile = generateMarkdown(answers);
 
     console.log(generatedFile);
 
