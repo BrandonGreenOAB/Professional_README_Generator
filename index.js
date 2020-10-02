@@ -60,6 +60,11 @@ inquirer
 
     console.log(generatedFile);
 
+    fs.writeFile('readMe.md', data, (err) => {
+      if (err) throw err;
+      console.log('The file has been saved!');
+    });
+
   })
   .catch(error => {
     if(error.isTtyError) {
@@ -68,3 +73,4 @@ inquirer
       // Something else when wrong
     }
   });
+
