@@ -60,7 +60,7 @@ inquirer
 
     console.log(generatedFile);
 
-    fs.writeFile('readMe.md', data, (err) => {
+    fs.writeFile('readMe.md', generatedFile, (err) => {
       if (err) throw err;
       console.log('The file has been saved!');
     });
@@ -68,7 +68,7 @@ inquirer
   })
   .catch(error => {
     if(error.isTtyError) {
-      // Prompt couldn't be rendered in the current environment
+     console.log("could not create the file");
     } else {
       // Something else when wrong
     }

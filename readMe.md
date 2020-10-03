@@ -1,10 +1,8 @@
-// function to generate markdown for README
-function generateMarkdown(data) {
-  return `
-  # ${data.title}
+
+  # Good readme Generator
 
   ## Description
-  ${data.description}
+  This application will allow any user to create a perfectly outlined readme with an included open source code of conduct. The user will fill out prompts about their project and select their badges, etc.
 
   ## Table of Contents
   1. [Instillation](#Instillation)
@@ -15,17 +13,17 @@ function generateMarkdown(data) {
   6. [Questions](#Questions)
 
   ## Installation
-  ${data.instillation}
+  use in terminal: npm install
 
   ## Usage
-  ${data.usage}
+  The user will install certain modules to allow this application to work, then you will run index.js and fill out the prompts.
 
   ## License
-  [![License !](https://img.shields.io/badge/License-${data.license}-1abc9c.svg)](https://GitHub.com/Naereen/ama)
+  [![License !](https://img.shields.io/badge/License-MIT-1abc9c.svg)](https://GitHub.com/Naereen/ama)
 
 
   ## Contributing
-  Https://www.github.com/${data.github}/
+  Https://www.github.com/BrandonGreenOAB/
 
   ### Contributor Covenant Code of Conduct
 
@@ -160,7 +158,3 @@ function generateMarkdown(data) {
 
   ## Questions
 
-`;
-}
-
-module.exports = generateMarkdown;
